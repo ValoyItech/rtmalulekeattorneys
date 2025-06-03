@@ -1,30 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    // Sidebar Toggle
+    const sidebar = document.getElementById('mobile-sidebar');
+    const openBtn = document.getElementById('mobile-menu-button');
+    const closeBtn = document.getElementById('close-sidebar');
 
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    if (openBtn && closeBtn && sidebar) {
+        openBtn.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
         });
     }
 
-    // Smooth Scrolling for Navigation Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Smooth Scrolling and Sidebar Close on Click
+    document.querySelectorAll('#mobile-sidebar a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-
             if (targetElement) {
                 window.scrollTo({
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+    });
 
-                if (mobileMenu) {
-                    mobileMenu.classList.add('hidden');
-                }
+    // Smooth Scrolling for Desktop Nav
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
             }
         });
     });
@@ -48,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Form Submission (example)
+    // Contact Form Submission (Dummy Example)
     const contactForm = document.querySelector('form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -58,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // HERO SLIDER FUNCTIONALITY
+    // Hero Slider Functionality
     const slides = document.querySelectorAll('.slide');
     const slideBtns = document.querySelectorAll('.slide-btn');
     const prevBtn = document.querySelector('.prev-slide');

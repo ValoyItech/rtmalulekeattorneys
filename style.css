@@ -131,3 +131,32 @@
         .next-slide {
             right: 20px;
         }
+
+
+        #mobile-sidebar a:hover {
+    background-color: var(--primary);
+    color: white !important;
+    border-radius: 8px;
+    padding-left: 12px;
+    transition: all 0.3s ease;
+}
+
+
+/* Add these styles to your existing CSS */
+.service-card i {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover i {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

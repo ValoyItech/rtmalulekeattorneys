@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #800020;
+            --secondary: #333333;
+            --accent: #808080;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            transition: width .3s;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .service-card:hover i {
+            color: white;
+        }
+        
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Add this to your existing CSS */
+.service-card:hover .text-gray-600 {
+    color: white !important;
+}
+
+.hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        /* Slider Styles */
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: 1;
+        }
+        
+        .slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+        
+        .slide-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+        
+        .slide-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .slide-btn.active {
+            background-color: #fff;
+        }
+        
+        .slide-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10;
+            transition: background-color 0.3s ease;
+        }
+        
+        .slide-nav:hover {
+            background-color: rgba(128, 0, 32, 0.7);
+        }
+        
+        .prev-slide {
+            left: 20px;
+        }
+        
+        .next-slide {
+            right: 20px;
+        }

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT Maluleke Attorneys | Professional Legal Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="images/logo.png" alt="RT Logo" class="w-12 h-12 rounded-full object-cover mr-3">
+            <h1 class="text-xl font-bold text-[#333333]">RT MALULEKE <span class="text-[#800020]">ATTORNEYS</span></h1>
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-[#333333]">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+        <nav class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link text-[#333333] hover:text-[#800020] font-medium">Home</a>
+            <a href="#about" class="nav-link text-[#333333] hover:text-[#800020] font-medium">About</a>
+            <a href="#team" class="nav-link text-[#333333] hover:text-[#800020] font-medium">Our Team</a>
+            <a href="#services" class="nav-link text-[#333333] hover:text-[#800020] font-medium">Services</a>
+            <a href="#contact" class="nav-link text-[#333333] hover:text-[#800020] font-medium">Contact</a>
+        </nav>
+    </div>
+</header>
+
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-[#333333] hover:text-[#800020] font-medium">Home</a>
+                <a href="#about" class="text-[#333333] hover:text-[#800020] font-medium">About</a>
+                <a href="#team" class="text-[#333333] hover:text-[#800020] font-medium">Our Team</a>
+                <a href="#services" class="text-[#333333] hover:text-[#800020] font-medium">Services</a>
+                <a href="#contact" class="text-[#333333] hover:text-[#800020] font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+ <!-- Hero Section with Slider -->
+    <section id="home" class="relative h-screen flex items-center justify-center bg-gray-900">
+        <!-- Hero overlay -->
+        <div class="absolute inset-0 hero-overlay z-5"></div>
+        
+        <!-- Slider Container -->
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('images/hero1.jpg')"></div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('images/hero2.jpg')"></div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('images/hero3.jpg')"></div>
+            
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: url('images/hero4.jpg')"></div>
+            
+            <!-- Slide 5 -->
+            <div class="slide" style="background-image: url('images/hero5.jpg')"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-4 z-10 text-center relative">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Expert Legal Solutions <br> <span class="text-[#800020]">You Can Trust</span></h1>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Providing exceptional legal services with integrity, professionalism and dedication to justice.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-lg font-medium transition duration-300">Contact Us</a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-medium transition duration-300">Our Services</a>
+            </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <div class="prev-slide slide-nav">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="next-slide slide-nav">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        
+        <!-- Slide Indicators -->
+        <div class="slide-controls">
+            <div class="slide-btn active" data-index="0"></div>
+            <div class="slide-btn" data-index="1"></div>
+            <div class="slide-btn" data-index="2"></div>
+            <div class="slide-btn" data-index="3"></div>
+            <div class="slide-btn" data-index="4"></div>
+        </div>
+        
+        <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#333333] mb-4">About Our Firm</h2>
+                <div class="w-20 h-1 bg-[#800020] mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">RT Maluleke Attorneys is a dynamic legal practice committed to delivering exceptional legal services across various fields of law. Our team of dedicated professionals brings together diverse expertise to provide comprehensive legal solutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-[#800020] text-4xl mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Our Mission</h3>
+                    <p class="text-gray-600">To provide accessible, high-quality legal services while upholding the highest standards of professional ethics and client confidentiality.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-[#800020] text-4xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Our Vision</h3>
+                    <p class="text-gray-600">To be recognized as a leading law firm that makes a meaningful difference in our clients' lives through expert legal representation.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-[#800020] text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Our Values</h3>
+                    <p class="text-gray-600">Integrity, Excellence, Client-Centered Approach, Professionalism, and Commitment to Justice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#333333] mb-4">Meet Our Team</h2>
+                <div class="w-20 h-1 bg-[#800020] mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our team consists of dedicated legal professionals with diverse expertise and a shared commitment to excellence.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-1">Mr. Risenga Thomson Maluleke</h3>
+                        <p class="text-[#800020] font-medium mb-4">Admitted Attorney & Commissioner of Oaths</p>
+                        <p class="text-gray-600 text-sm mb-4">Born in Gauteng. Earned LLB in 2010. Admitted in 2014. Experienced in criminal law, civil litigation, divorce matters, and general legal practice.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-1">Ms. Nyasha Mathye</h3>
+                        <p class="text-[#800020] font-medium mb-4">Candidate Attorney</p>
+                        <p class="text-gray-600 text-sm mb-4">Born in Tzaneen. Obtained LLB from University of Limpopo in 2019. Currently gaining experience in criminal law, civil litigation, and RAF claims.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>                
+                
+                <!-- Team Member 3 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-1">Mr. Moema Barnabas Moema</h3>
+                        <p class="text-[#800020] font-medium mb-4">Attorney and Labour Law Specialist</p>
+                        <p class="text-gray-600 text-sm mb-4">Obtained LLB from University of Johannesburg. Extensive experience in employment law, civil litigation, family law, and consumer protection.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-1">Adv. Pfarelo Glen Masindi</h3>
+                        <p class="text-[#800020] font-medium mb-4">Admitted Advocate of the High Court</p>
+                        <p class="text-gray-600 text-sm mb-4">Born in Soshanguve, Pretoria. Obtained LLB from University of Venda in 2008. Specializes in litigation and courtroom advocacy with over a decade of experience.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>                
+                
+                <!-- Team Member 5 (Placeholder for RT Maluleke) -->
+                <div class="team-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-1">Mr. RT Maluleke</h3>
+                        <p class="text-[#800020] font-medium mb-4">Principal Attorney</p>
+                        <p class="text-gray-600 text-sm mb-4">Experienced legal practitioner and mentor to young attorneys. Provides strategic direction and oversight for the firm's operations.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-500 hover:text-[#800020]"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#333333] mb-4">Our Legal Services</h2>
+                <div class="w-20 h-1 bg-[#800020] mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We offer comprehensive legal services tailored to meet our clients' diverse needs.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Criminal Law & Bail Applications</h3>
+                    <p class="text-gray-600">Expert representation in criminal matters, including bail applications, plea bargaining, and trial defense.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Civil Litigation & Dispute Resolution</h3>
+                    <p class="text-gray-600">Representation in civil disputes, including contract disputes, debt collection, and alternative dispute resolution.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Divorce & Family Law</h3>
+                    <p class="text-gray-600">Assistance with divorce proceedings, maintenance, custody matters, and domestic violence cases.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Wills, Estates & Trusts</h3>
+                    <p class="text-gray-600">Drafting of wills, estate planning, administration of deceased estates, and trust formation.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Road Accident Fund (RAF) Claims</h3>
+                    <p class="text-gray-600">Assistance with RAF claims for compensation following motor vehicle accidents.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Property Transfers & Conveyancing</h3>
+                    <p class="text-gray-600">Handling of property transfers, bond registrations, and all conveyancing matters.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Corporate & Commercial Law</h3>
+                    <p class="text-gray-600">Company formations, corporate governance, compliance, and commercial transactions.</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Contract Drafting & Review</h3>
+                    <p class="text-gray-600">Drafting, reviewing and vetting of various contracts and agreements.</p>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg border border-gray-200 transition duration-300">
+                    <div class="text-[#800020] text-3xl mb-4">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Notarial Services & Antenuptial Contracts</h3>
+                    <p class="text-gray-600">Notarization of documents and drafting of antenuptial contracts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-[#800020] mx-auto mb-6"></div>
+                <p class="text-gray-300 max-w-3xl mx-auto">Get in touch with our team for professional legal assistance.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block mb-2">Service Needed</label>
+                            <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
+                                <option value="">Select a service</option>
+                                <option value="criminal">Criminal Law</option>
+                                <option value="civil">Civil Litigation</option>
+                                <option value="divorce">Divorce & Family Law</option>
+                                <option value="wills">Wills & Estates</option>
+                                <option value="raf">RAF Claims</option>
+                                <option value="property">Property Transfers</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="contracts">Contract Review</option>
+                                <option value="notarial">Notarial Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-lg font-medium transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-[#800020] text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Office Address</h4>
+                                <p class="text-gray-300">391 Main Avenue, The Palms Office Park<br>Block C, 1st Floor<br>Ferndale, Randburg</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-[#800020] text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="text-gray-300">info@rtmalulekeattorneys.co.za</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-[#800020] text-xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <p class="text-gray-300">078 729 3405<br>060 426 1662</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-[#800020] text-xl mr-4 mt-1">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Website</h4>
+                                <p class="text-gray-300">www.rtmalulekeattorneys.co.za</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Office Hours</h4>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>Monday - Thursday</span>
+                                <span>08:30 - 16:30</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>Friday</span>
+                                <span>08:30 - 15:00</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <span>Saturday - Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 bg-gray-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.987182203197!2d28.00449731502891!3d-26.13288398346296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6c5e5c1f%3A0x1e3e0b1b1b1b1b1b!2sThe%20Palms%20Office%20Park%2C%20391%20Main%20Ave%2C%20Ferndale%2C%20Randburg%2C%202194!5e0!3m2!1sen!2sza!4v1629999999999!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#333333] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+<div class="flex items-center mb-4">
+    <div class="w-10 h-10 rounded-full bg-[#800020] flex items-center justify-center text-white font-bold text-sm mr-2 overflow-hidden">
+        <img src="images/logo.png" alt="Logo" class="w-full h-full object-cover">
+    </div>
+    <h3 class="text-xl font-bold">RT MALULEKE <span class="text-[#800020]">ATTORNEYS</span></h3>
+</div>
+
+                    <p class="text-gray-400 mb-4">Providing exceptional legal services with integrity and professionalism.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white">Our Team</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Criminal Law</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Civil Litigation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Family Law</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Wills & Estates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">RAF Claims</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for legal updates and firm news.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-700 text-white rounded-l-lg focus:outline-none w-full">
+                        <button type="submit" class="bg-[#800020] hover:bg-[#600018] px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 RT Maluleke Attorneys. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-8 right-8 bg-[#800020] text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-[#600018] transition duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>

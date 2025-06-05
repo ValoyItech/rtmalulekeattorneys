@@ -243,7 +243,7 @@
           <h3 class="text-xl font-bold text-[#333333]" data-aos="fade-up">Advocate Pfarelo Glen Masindi</h3>
           <p class="text-[#800020] font-semibold mb-3" data-aos="fade-up" data-aos-delay="100">Admitted Advocate</p>
           <p class="text-sm text-gray-600 mb-4" data-aos="fade-up" data-aos-delay="200">
-            Born in Soshanguve. LLB graduate from University of Venda (2008). Advocate since 2010 with strong experience in litigation and legal advisory.
+            Born in Soshanguve then moved to Venda. LLB graduate from University of Venda (2008). Advocate since 2010 with strong experience in litigation and legal advisory.
           </p>
         </div>
       </div>
@@ -275,6 +275,21 @@
     </p>
   </div>
 </div>
+
+<!-- Member 6 -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+  <div class="h-60 bg-gray-200 flex items-center justify-center">
+    <i class="fas fa-user text-6xl text-gray-400" data-aos="zoom-in"></i>
+  </div>
+  <div class="p-6">
+    <h3 class="text-xl font-bold text-[#333333]" data-aos="fade-up">Mr. Frans Lesetja Mohlasedi</h3>
+    <p class="text-[#800020] font-semibold mb-3" data-aos="fade-up" data-aos-delay="100">Messenger & Secretary</p>
+    <p class="text-sm text-gray-600 mb-4" data-aos="fade-up" data-aos-delay="200">
+      Serving since 2022. Provides internal support with document delivery, filing, and daily administrative duties to ensure smooth office operations.
+    </p>
+  </div>
+</div>
+
 
     </div>
   </div>
@@ -389,60 +404,90 @@
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
-                    <form class="space-y-6">
-                        <div>
-                            <label for="name" class="block mb-2">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block mb-2">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
-                        </div>
-                        
-                        <div>
-                            <label for="service" class="block mb-2">Service Needed</label>
-                            <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
-                                <option value="">Select a service</option>
-                                <option value="criminal">Criminal Law</option>
-                                <option value="civil">Civil Litigation</option>
-                                <option value="divorce">Divorce & Family Law</option>
-                                <option value="wills">Wills & Estates</option>
-                                <option value="raf">RAF Claims</option>
-                                <option value="property">Property Transfers</option>
-                                <option value="corporate">Corporate Law</option>
-                                <option value="contracts">Contract Review</option>
-                                <option value="notarial">Notarial Services</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block mb-2">Your Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-lg font-medium transition duration-300 w-full">Send Message</button>
-                    </form>
+                    <form action="send.php" method="POST" class="space-y-6">
+      
+      <label class="block">
+        <span class="mb-2 block">Full Name</span>
+        <input type="text" name="name" required
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]" />
+      </label>
+
+      <label class="block">
+        <span class="mb-2 block">Email Address</span>
+        <input type="email" name="email" required
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]" />
+      </label>
+
+      <label class="block">
+        <span class="mb-2 block">Phone Number</span>
+        <input type="tel" name="phone" required
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]" />
+      </label>
+
+      <label class="block">
+        <span class="mb-2 block">Service Needed</span>
+        <select name="service" required
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]">
+          <option value="">Select a service</option>
+          <option value="criminal">Criminal Law</option>
+          <option value="civil">Civil Litigation</option>
+          <option value="divorce">Divorce & Family Law</option>
+          <option value="wills">Wills & Estates</option>
+          <option value="raf">RAF Claims</option>
+          <option value="property">Property Transfers</option>
+          <option value="corporate">Corporate Law</option>
+          <option value="contracts">Contract Review</option>
+          <option value="notarial">Notarial Services</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="mb-2 block">Your Message</span>
+        <textarea name="message" rows="5" required
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"></textarea>
+      </label>
+
+      <button type="submit"
+        class="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-lg font-medium transition duration-300 w-full">
+        Send Message
+      </button>
+    </form>
+
                 </div>
                 
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
                     
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="text-[#800020] text-xl mr-4 mt-1">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Office Address</h4>
-                                <p class="text-gray-300">391 Main Avenue, The Palms Office Park<br>Block C, 1st Floor<br>Ferndale, Randburg</p>
-                            </div>
-                        </div>
+ <div class="space-y-6">
+    <div class="flex items-start">
+        <div class="text-[#800020] text-xl mr-4 mt-1">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div>
+            <h4 class="font-bold mb-1">Randburg Branch</h4>
+            <p class="text-gray-300">391 Main Avenue, The Palms Office Park<br>Block C, 1st Floor<br>Ferndale, Randburg</p>
+        </div>
+    </div>
+
+    <div class="flex items-start">
+        <div class="text-[#800020] text-xl mr-4 mt-1">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div>
+            <h4 class="font-bold mb-1">Mpumalanga Branch</h4>
+            <p class="text-gray-300">11 Van Der Merwe Street<br>1200, Mpumalanga, South Africa</p>
+        </div>
+    </div>
+
+    <div class="flex items-start">
+        <div class="text-[#800020] text-xl mr-4 mt-1">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+        <div>
+            <h4 class="font-bold mb-1">Mpumalanga Telephone</h4>
+            <p class="text-gray-300">013 140 0008</p>
+        </div>
+    </div>
+                   
                         
                         <div class="flex items-start">
                             <div class="text-[#800020] text-xl mr-4 mt-1">
@@ -499,7 +544,7 @@
 
     <!-- Map Section -->
     <div class="h-96 bg-gray-200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.987182203197!2d28.00449731502891!3d-26.13288398346296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6c5e5c1f%3A0x1e3e0b1b1b1b1b1b!2sThe%20Palms%20Office%20Park%2C%20391%20Main%20Ave%2C%20Ferndale%2C%20Randburg%2C%202194!5e0!3m2!1sen!2sza!4v1629999999999!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.183505935325!2d27.995982074969245!3d-26.084110759092955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9575003682aacb%3A0xee4baaaa8e4c39c3!2sRT%20MALULEKE%20ATTORNEYS!5e1!3m2!1sen!2sza!4v1749124349582!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <!-- Footer -->
@@ -558,7 +603,7 @@
             </div>
             
             <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 RT Maluleke Attorneys. All Rights Reserved.</p>
+                <p>&copy; 2023 RT Maluleke Attorneys. All Rights Reserved | By <a href="https://www.valoyitech.co.za/" target="_blank" rel="noopener noreferrer">ValoyItech</a></p>
             </div>
         </div>
     </footer>
